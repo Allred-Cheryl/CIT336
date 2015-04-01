@@ -9,7 +9,7 @@ $fnav = GetFootNavItems();
                     <a href='/index.php?action=<?php echo $action ?>'><?php echo $text ?></a>
                 </li>
             <?php endforeach; ?>
-                <li><a href="assessments/CIT336 Teaching Presentation.php">Teaching Presentation</a></li>
+                <li><a href="/index.php?action=TeachingPresentation">Teaching Presentation</a></li>
                   <li><a href="/index.php?action=SitePlan" title="Site Plan">Site Plan</a>&nbsp;&nbsp;</li>
                  <li><a href="#" title="Source Code">Source Code</a></li>
         </ul>
