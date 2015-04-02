@@ -1,10 +1,5 @@
 <?php
-/* 
- * BYUI - CIT 260
- * Mike Neville
- */
 
-/// Returns an array where the key is the Action and the value is the text for the link.
 function GetPrimaryNavigationItems()
 {
     $nav = array(
@@ -13,7 +8,7 @@ function GetPrimaryNavigationItems()
         'audio' => 'Audio',
         'links' => 'Links',
         'upload' => 'Upload',
-        'contact' => 'Contact'
+        'comment' => 'Comments'
     );
     
     if (CheckSession())
@@ -27,4 +22,16 @@ function GetPrimaryNavigationItems()
     }
     
     return $nav;
+}
+function GetFootNavItems() {
+
+    $fnav = array(
+        'siteplan' => 'Site Plan',
+        'about' => 'About',
+        'contact' => 'Contact Us',
+        'teachingpresentation' => 'Teaching Presentation'
+        );
+
+
+    return $fnav;
 }

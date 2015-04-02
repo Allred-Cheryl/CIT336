@@ -1,5 +1,5 @@
 <?php ?>
-<script src="/js/commentdetails.js"></script>
+<script src="/js/deletecomments.js"></script>
 <main>
     <h1>Comment</h1>
     <p>Leave a comment about the music or any suggestions you have.</p>

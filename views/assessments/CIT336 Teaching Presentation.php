@@ -5,7 +5,6 @@
  <title>CIT 336 Teaching Presentation</title>
  </head>
  <body>
- <header><?php include $_SERVER['DOCUMENT_ROOT'].'/Modules/header.php';?></header>
  <div class="main">
      
      <a href="http://1drv.ms/18BApWh"><h2>Teaching Presentation</h2></a>
@@ -14,8 +13,6 @@
      <br>
      
  </div>
-     <footer>
-         <?php include $_SERVER['DOCUMENT_ROOT'].'/Modules/footer.php';?>
-     </footer>
+
  </body>
 </html>

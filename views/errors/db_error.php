@@ -2,7 +2,7 @@
     "http://www.w2.org/TR/xhtml1/DTD/xhtml-transitional.dtd">
 <html xmlns="http:www.w3.org/1999/xhtml">
     <head>
-        <title>Lindstrom Life</title>
+        <title>Padawan Composer</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css"></link>
     </head>
     <body>
@@ -19,7 +19,7 @@
 
                 <div id="footer">
                     <p class="copyright">
-                        &copy; <?php echo date("Y"); ?> Lindstrom Life, All Rights Reserved.
+                        &copy; <?php echo date("Y"); ?> Padawan Composer, All Rights Reserved.
                     </p>
                 </div>
             </div>

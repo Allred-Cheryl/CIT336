@@ -8,27 +8,25 @@
     <main class="main">
        
              <h2>Music</h2>
-        <ul>
+          <ul>
             
-            <li> <a href="audio/Cowboys Overture.php">Cowboys Overture</a></li>
-            <li><a href="audio/ET.php">ET</a></li>
-            <li><a href="audio/Fiddler on the Roof.php">Fiddler on the Roof</a></li>
-            <li> <a href="audio/For Always.php">For Always</a></li>
-             <li><a href="audio/Harry Potter.php">Harry Potter</a></li>
-             <li><a href="audio/Indiana Jones.php">Indiana Jones</a></li>
-             <li><a href="audio/Jaws.php">Jaws</a></li>
-             <li><a href="audio/Jurassic Park.php">Jurassic Park</a></li>
-             <li><a href="audio/Olympic Fanfare.php">Olympic Fanfare</a></li>
-             <li><a href="audio/Schindler's List.php">Schindler's List</a></li>
-             <li><a href="audio/Spiderman.php">Spiderman</a></li>
-             <li><a href="audio/Star Wars.php">Star Wars</a></li>
-            <li> <a href="audio/Still Alive.php">Still Alive</a></li>
-            <li> <a href="audio/War Horse.php">War Horse</a></li>
+            <li> <a href="/?action=cowboys">Cowboys Overture</a></li>
+            <li><a href="/?action=et">ET</a></li>
+            <li><a href="/?action=fiddler">Fiddler on the Roof</a></li>
+            <li> <a href="/?action=foralways">For Always</a></li>
+             <li><a href="/?action=harrypotter">Harry Potter</a></li>
+             <li><a href="/?action=indianajones">Indiana Jones</a></li>
+             <li><a href="/?action=jaws">Jaws</a></li>
+             <li><a href="/?action=jurassicpark">Jurassic Park</a></li>
+             <li><a href="/?action=olympicfanfare">Olympic Fanfare</a></li>
+             <li><a href="/?action=schindlerslist">Schindler's List</a></li>
+             <li><a href="/?action=spiderman">Spiderman</a></li>
+             <li><a href="/?action=starwars">Star Wars</a></li>
+            <li> <a href="/?action=stillalive">Still Alive</a></li>
+            <li> <a href="/?action=warhorse">War Horse</a></li>
         </ul>       
 
       </main>
-        <footer>
-         <?php include $_SERVER['DOCUMENT_ROOT'].'/Modules/footer.php';?>
-     </footer>
+
     </body>
 </html>

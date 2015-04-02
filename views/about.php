@@ -13,8 +13,6 @@
      The point is to relax, have fun and enjoy music.
  </p>
  </main>
-     <footer>
-         <?php include $_SERVER['DOCUMENT_ROOT'].'/Modules/footer.php';?>
-     </footer>
+
  </body>
 </html>

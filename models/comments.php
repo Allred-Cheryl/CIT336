@@ -1,29 +1,49 @@
 <?php
-
 /// GetCommentsByUser
 /// Returns all of the comments written by the given user.
 /// $userId - the User Id of the user who wrote the comments.
-function GetCommentsByUser($userId) {
-	$query = "SELECT * FROM comments WHERE userId=:id";
-	return DbSelect($query, array(':id' => $userId));
-}
+class Comment {
 
-/// Retrieves the Comment and User information for a given Item.
-/// $itemId - the Id of the item to look up.
-function GetCommentsWithUsersForItem($itemId) {
-	$query = "SELECT * FROM comments AS c
-			  LEFT JOIN users AS u on u.Id = c.userId
-			  WHERE c.itemId=:id
-			  ORDER by updated";
-	return DbSelect($query, array(':id' => $itemId));
-}
+    var $id;
+    var $userId;
+    var $comment;
+    var $updated;
 
-/// Saves comments onto an item.
-/// $itemId - the Item to save comments for
-/// $userId - the Id of the User who wrote the comment.
-/// $comment - the text of the comment.
-function SaveComment($itemId, $userId, $comment)
+}
+function GetOrderedComments()
 {
-	$query = "INSERT INTO comments(userId, itemId, comment) VALUES(:userId, :itemId, :comment)";
-	return DbInsert($query, array(':userId' => $userId, ':itemId' => $itemId, ':comment' => $comment));
+
+	$query = "SELECT * FROM comments ORDER BY id DESC";
+	return DbSelect($query);
+
+    }
+
+function GetAllComments() {
+        $comments = array();
+	$query = "SELECT * FROM comments";
+	return DbSelect($query);
+        
+        foreach ($result as $item) {
+        $comment = new Comment();
+        $comment->id = $item['Id'];
+        $comment->userId = $item['email'];
+        $comment->comment = $item['firstname'];
+        $comment->updated = $item['lastname'];
+
+        $comments[] = $comment;
+        }
+}
+
+function SaveComment($userId, $comment)
+{
+	$query = "INSERT INTO comments(userId, comment) VALUES(:userId, :comment)";
+	return DbInsert($query, array(':userId' => $userId, ':comment' => $comment));
+}
+
+/// Deletes the comments
+function DeleteComment($comment) {
+    if ($comment) {
+        $query = "DELETE FROM comments WHERE userId=:id";
+        $result = DbExecute($query, array(':id' => $userId));
+    }
 }

@@ -22,8 +22,6 @@
 <h3>Post videos and review them.</h3>
 <a href="composerschallenge.com">Composers Challenge</a>
 </main>
-     <footer>
-         <?php include $_SERVER['DOCUMENT_ROOT'].'/Modules/footer.php';?>
-     </footer>
+
  </body>
 </html>

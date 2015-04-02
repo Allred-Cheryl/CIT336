@@ -6,8 +6,7 @@
 
  </head>
  <body>
- <header><?php include $_SERVER['DOCUMENT_ROOT'].'/Modules/header.php';?></header>
- <main><h1>Site Plan</h1></main>
+  <main><h1>Site Plan</h1></main>
  <p>Website for aspiring music geeks</p>
      <p>Description
 <br>1) PadawanComposer.com
@@ -16,7 +15,7 @@ Unlike other sites, this one is free.
 What music would you make?
 <br>3) My target audience not only likes music but more specifically making music.<br>They come from all economic ranges, but more likely they are from lower socio economic statuses.<br>Education also varies as does age.<br>The range is from older children to people in their fifties.<br>
 <br>4) Persona
-<a href="Persona.pdf">Persona</a>
+<a href="assessments/Persona.pdf">Persona</a>
 <br>5) Scenario: Where can I learn more about the artist</p>
      
 
@@ -41,19 +40,17 @@ What music would you make?
 <br>Responsiveness
 In the Site Views link at the bottom are sketches of the home page and video page for a desktop, IPad, and an IPhone</p>
 <p>
-    <img src="DesktopVideo.png" alt="Desktop Video View" height="128"/>
-    <img src="Desktophome.png" alt="Desktop Home View" height="128"/>
-    <img src="IPadHomeview.png" alt="IPad Home View" height="128"/>
-    <img src="IPadVideo.png" alt="IPad Video View" height="128"/>
-    <img src="IPhoneHome.png" alt="IPhone Home View" height="128"/>
-    <img src="IPhoneVideo.png" alt="IPhone Video View" height="128"/>
+    <img src="assessments/DesktopVideo.png" alt="Desktop Video View" height="128"/>
+    <img src="assessments/Desktophome.png" alt="Desktop Home View" height="128"/>
+    <img src="assessments/IPadHomeview.png" alt="IPad Home View" height="128"/>
+    <img src="assessments/IPadVideo.png" alt="IPad Video View" height="128"/>
+    <img src="assessments/IPhoneHome.png" alt="IPhone Home View" height="128"/>
+    <img src="assessments/IPhoneVideo.png" alt="IPhone Video View" height="128"/>
 </p>
     <p>
 <a href="https://drive.google.com/file/d/0B9JV5k2P32AKWWxWdkNweF9CQWM/view?usp=sharing" target="_blank">Persona</a>
 <a href="https://drive.google.com/folderview?id=0B9JV5k2P32AKTHNRa1p4OXVTM0U&usp=sharing" target="_blank">Site Views</a>
 </p>
-     <footer>
-         <?php include $_SERVER['DOCUMENT_ROOT'].'/Modules/footer.php';?>
-     </footer>
+
  </body>
 </html>

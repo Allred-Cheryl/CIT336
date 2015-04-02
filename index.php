@@ -21,6 +21,9 @@ switch ($action) {
     case 'home' :
         include 'views/home.php';
         break;
+    case 'about' :
+        include 'views/about.php';
+        break;
 
     case 'video' :
         include 'views/video.php';
@@ -118,7 +121,7 @@ switch ($action) {
     case 'myinfo':
         $page = 'views/login.php';
 
-        if ($userId === GetLoggedInUserId()) {
+        if ($userId = GetLoggedInUserId()) {
             $page = 'views/myinfo.php';
             $user = GetUser($userId);
         }
@@ -157,6 +160,14 @@ switch ($action) {
 
     case 'siteplan' :
         include 'views/siteplan.php';
+        break;
+    
+    case 'submissions' :
+        include 'views/submissions.php';
+        break;
+    
+    case 'teachingpresentation':
+        include 'views/assessments/CIT336 Teaching Presentation.php';
         break;
 
     case 'updateinfo':
@@ -213,6 +224,62 @@ switch ($action) {
 
     case 'upload' :
         include 'views/uploads.php';
+        break;
+    
+    case 'cowboys' :
+        include 'views/audio/CowboysOverture.php';
+        break;
+   
+    case 'et' :
+        include 'views/audio/ET.php';
+        break;
+   
+    case 'fiddler' :
+        include 'views/audio/FiddlerontheRoof.php';
+        break;
+   
+    case 'foralways' :
+        include 'views/audio/ForAlways.php';
+        break;
+   
+    case 'harrypotter' :
+        include 'views/audio/HarryPotter.php';
+        break;
+   
+    case 'indianajones' :
+        include 'views/audio/IndianaJones.php';
+        break;
+   
+    case 'jaws' :
+        include 'views/audio/Jaws.php';
+        break;
+   
+    case 'jurassicpark' :
+        include 'views/audio/JurassicPark.php';
+        break;
+   
+    case 'olymicfanfare' :
+        include 'views/audio/OlympicFanfare.php';
+        break;
+   
+    case 'schindlerslist' :
+        include 'views/audio/SchindlersList.php';
+        break;
+   
+    case 'spiderman' :
+        include 'views/audio/Spiderman.php';
+        break;
+   
+    case 'starwars' :
+        include 'views/audio/StarWars.php';
+        break;
+   
+    case 'stillalive' :
+        include 'views/audio/StillAlive.php';
+        break;
+   
+    case 'warhorse' :
+        include 'views/audio/WarHorse.php';
         break;
 
     default :
