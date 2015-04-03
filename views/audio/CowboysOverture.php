@@ -9,10 +9,13 @@
  <div class="main">
      <h2>The Cowboys Overture</h2>
      <audio controls>
-         <source src="../music/The Cowboys Overture.mp3" type="audio/mpeg"><br><br><br><a href="/?action=ausio">Back to Music List</a>
-         <br><br><br><a href="/?action=ausio">Back to Music List</a>
+         <source src="../music/The Cowboys Overture.mp3" type="audio/mpeg">
+         
+     
+         <br><br><br>
          Your browser does not support the <code>audio</code> tag.
      </audio>
+     <br><br><a href="/index.php?action=audio">Back to Music List</a>
  </div>
 
  </body>

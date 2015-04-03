@@ -2,14 +2,7 @@
 /// GetCommentsByUser
 /// Returns all of the comments written by the given user.
 /// $userId - the User Id of the user who wrote the comments.
-class Comment {
 
-    var $id;
-    var $userId;
-    var $comment;
-    var $updated;
-
-}
 function GetOrderedComments()
 {
 
