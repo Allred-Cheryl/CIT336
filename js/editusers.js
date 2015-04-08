@@ -12,6 +12,6 @@ function DeleteUser(id) {
     var confirmed = confirm("Are you sure you want to remove this user?");
 
     if (confirmed) {
-        window.location = '/?action=deleteuser&id=' + id;
+        window.location.href = '/?action=deleteuser&id=' + id;
     }
 }

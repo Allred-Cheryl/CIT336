@@ -14,6 +14,7 @@
 
     <body>
       <header>
+          <img class="logo" src="../Padawan Composer Logo.jpg" alt="website logo" >
         <div id="banner">
         </div>
         

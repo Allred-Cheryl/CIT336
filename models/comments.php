@@ -44,8 +44,8 @@ function SaveComment($userId, $comment)
 
 /// Deletes the comments
 function DeleteComment($id) {
-
-        $query = "DELETE FROM comments WHERE ID=:id";
+echo 'id:'.$id;
+        $query = "DELETE FROM comments WHERE Id=:id";
         $dbExecute = DbExecute($query, [':id' => $id]);
         
     

@@ -57,6 +57,8 @@ switch ($action) {
         break;
 
     case 'deletecomment':
+        echo 'test';
+        
         $id = (int) filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
         if (LoggedInUserIsAdmin() && $id) {
@@ -67,6 +69,7 @@ switch ($action) {
         exit();
 
     case 'deleteuser':
+        echo 'test2';
         $id = (int) filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
         if (LoggedInUserIsAdmin() && $id) {
