@@ -135,9 +135,10 @@ switch ($action) {
 
             if ($text) {
                 SaveComment($userId, $text);
-             }
+                header('Location: /?action=comment');
+                exit();
+            }
         }
-        $comments = GetOrderedComments();
         include 'views/comment.php';
         break;
 

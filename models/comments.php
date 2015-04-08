@@ -2,7 +2,14 @@
 /// GetCommentsByUser
 /// Returns all of the comments written by the given user.
 /// $userId - the User Id of the user who wrote the comments.
+class Comment {
 
+    var $id;
+    var $userId;
+    var $comment;
+    var $updated;
+
+}
 function GetOrderedComments()
 {
 
@@ -31,12 +38,15 @@ function SaveComment($userId, $comment)
 {
 	$query = "INSERT INTO comments(userId, comment) VALUES(:userId, :comment)";
 	return DbInsert($query, array(':userId' => $userId, ':comment' => $comment));
+        
+
 }
 
 /// Deletes the comments
-function DeleteComment($comment) {
-    if ($comment) {
-        $query = "DELETE FROM comments WHERE userId=:id";
-        $result = DbExecute($query, array(':id' => $userId));
-    }
+function DeleteComment($id) {
+
+        $query = "DELETE FROM comments WHERE ID=:id";
+        $dbExecute = DbExecute($query, [':id' => $id]);
+        
+    
 }

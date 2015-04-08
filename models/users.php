@@ -16,7 +16,7 @@ class User
 
 
 /// Calculate the password hash.
-/// We don't want to store the plain text password in the database.
+
 function CalculatePasswordHash($password) {
 	return sha1($password . 'addSomeExtraSalt123');
 }
@@ -128,12 +128,6 @@ function LoginUser($email, $password) {
 
 
 /// Adds a new user to the database.
-/// $first - the user's first name
-/// $last - the user's last name
-/// $email - the user's email address
-/// $pass1 - the user's password
-/// $pass2 - the user's password again, for verification.
-/// Returns TRUE if the user was saved, FALSE if not.
 function RegisterUser($first, $last, $email, $pass1, $pass2, &$message) {
 	$registered = false;
 	
@@ -198,29 +192,21 @@ function ValidatePasswordLength($name, &$message) {
 	} 
 }
 
-/// Saves the session variables for a User.
-/// If the variables are set, that indicates that the user is logged in.
-/// $user - a User object.
+
 function SetUserSessionVariables(User $user) {
 	$_SESSION['UserId'] = $user->id;
 	$_SESSION['UserRole'] = $user->roleId;
 }
 
 
-/// Update the user information in the database.
-/// $id - the Id of the user to update.
-/// $email - the updated email address.
-/// $firstname - the updated first name.
-/// $lastname - the updated last name.
+
 function UpdateUserInfo($id, $email, $firstname, $lastname)
 {
 	$query = 'UPDATE users SET email=:email, firstName=:firstname, lastname=:lastname WHERE ID=:id';
 	DbExecute($query, array(':email' => $email, ':firstname' => $firstname, ':lastname' => $lastname, ':id' => $id));
 }
 
-/// Update the User password.
-/// $password - the updated password.
-/// $id - the Id of the user to update - if null, update the currently logged-in user.
+
 function UpdateUserPassword($password, $id = null)
 {
 	$id = ($id == null) ? GetLoggedInUserId() : $id;
@@ -245,10 +231,7 @@ function UpdateUserRole($id, $roleName)
 	}
 }
 
-/// Validates that a password matches what is in the database.
-/// Only checks the password of the currently logged in user.
-/// $password - the password to validate.
-/// Returns TRUE on match, FALSE on no match.
+
 function ValidateOldPassword($password)
 {
 	$return = false;
@@ -267,10 +250,7 @@ function ValidateOldPassword($password)
 }
 
 
-/// A helper method to validate that the password meets complexity requirements.
-/// $password - the password.
-/// $message - after a call, will contain a message if there was an error.
-/// Returns TRUE on success, FALSE on failure.
+
 function ValidatePassword($password, &$message)
 {
 	$valid = false;
